@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+{% block content %}
+
+{% for item in posts %}
+h1
+  a(href="{{item.permalink}}") {{item.title}}
+{{item.get_preview}}
+{% endfor %}
+
+footer(class="pagination")
+  {% if pagination.prev %}
+  a(href="{{pagination.prev.link}}") Newer
+  {% endif %}
+
+  {% if pagination.next %}
+  a(href="{{pagination.next.link}}") Older
+  {% endif %}
+
+{% endblock %}

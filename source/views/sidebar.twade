@@ -1,0 +1,10 @@
+aside
+  h2 Categories
+  ul
+
+    {% for item in categories %}
+
+    li
+      a(href="{{item.link}}") {{item.name}}
+
+    {% endfor %}

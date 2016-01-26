@@ -1,0 +1,4 @@
+nav
+  {% for item in menu.get_items %}
+  a(href="{{item.link}}") {{item.title}}
+  {% endfor %}

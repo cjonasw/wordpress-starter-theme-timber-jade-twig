@@ -1,0 +1,8 @@
+{% include 'sidebar.twig' %}
+
+{{seperate_twig_render_example|raw}}
+
+{{wp_footer|raw}}
+
+</body>
+</html>
